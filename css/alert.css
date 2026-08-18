@@ -1,0 +1,37 @@
+.sweet_loader {
+	width: 140px;
+	height: 140px;
+	margin: 0 auto;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-name: ro;
+	transform-origin: 50% 50%;
+	transform: rotate(0) translate(0,0);
+}
+@keyframes ro {
+	100% {
+		transform: rotate(-360deg) translate(0,0);
+	}
+}
+
+.serial-table-container {
+	max-height: 110px;
+	overflow-y: auto;
+}
+
+.serial-table-container table {
+	margin-bottom: 0;
+	font-size: 0.875rem;
+}
+
+.serial-table-container thead th {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	padding: 0.35rem 0.5rem;
+}
+
+.serial-table-container tbody td {
+	padding: 0.35rem 0.5rem;
+}
